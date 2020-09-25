@@ -2,10 +2,10 @@
 #include <string>
 using namspace std;
 
-double a,b,c;
-char choice;
+double a,b,c;  //variables (a & b) for the user's input and 'c' for the result
+char choice;  //variable to choose operation
 
-cout << "Enter the first value: " << endl;
+cout << "Enter the first value: " << endl;  
 cin >> a;
 
 cout << "Enter the second value: " << endl;
