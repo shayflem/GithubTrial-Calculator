@@ -2,15 +2,53 @@
 #include <string>
 using namspace std;
 
-int a,b,c;
+double a,b,c;
+char choice;
 
-cout << "Enter value 'a' as a whole number" << endl;
+cout << "Enter the first value: " << endl;
 cin >> a;
 
-cout << "Enter value 'b' as a whole number" << endl;
+cout << "Enter the second value: " << endl;
 cin >> b;
 
-c=a+b;
+cout << "Select a function to execute: " << endl;
+cout << "A=Addition" << endl;
+cout << "S=Subtraction" << endl;
+cout << "D=Division" << endl;
+cout << "M=Multiplication" << endl;
+cin >> choice;
+
+switch (choice)
+{
+case toupper A:
+{
+    c=a+b;
+    cout << c << endl;}
+    break;
+
+case toupper S:
+{
+    c=a-b;
+    cout << c << endl;}
+    break;
+
+case toupper D:
+{
+    c=a/b;
+    cout << c << endl;}
+    break;
+
+case toupper M:
+{
+    c=a*b;
+    cout << c << endl;}
+    break;
+
+
+default:
+cout << "Invalid Choice" << endl;
+    break;
+}
 
 
 return 0;
